@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100&family=Mulish:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,100;1,200;1,300;1,500;1,700&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Mulish:wght@300&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;0,800;1,100;1,200;1,300;1,500;1,700&family=Rubik+Doodle+Shadow&family=Rubik+Doodle+Triangles&family=Vina+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(3, 3, 41);
+    color: white;
+}
+.navbar{
+    height: 90px;
+display: flex;
+justify-content: center;
+align-items: center;
+justify-content: space-around;
+background-color: rgb(21, 21, 77);
+}
+.left{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #f1c40f;
+    font-family: Rubik Doodle Triangles;
+    font-size: 3.3rem;
+    cursor: pointer;
+    /* text-shadow: 3px 3px #776003; */
+}
+
+.right{
+   
+    margin-left: 276px;
+    margin-right: 1px;
+  
+    text-transform: capitalize;
+}
+.right ul{
+    display: flex;
+    justify-content: center;
+} 
+.right ul li{
+    margin: 0 23px;
+    list-style-type: none;
+}
+.right ul li a{
+   text-decoration: none;
+   color: white;
+   font-size: 1.2rem;
+}
+.right ul li a:hover{
+   color: #f1c40f;
+   
+}
+@media (max-width:992px) {
+    .left{
+        margin-left: 123px;
+        width: 231px;
+      }
+
+    .right{
+        margin-right: 133px;
+    }
+        .singnupbtn{
+            width: 89px;
+        }
+
+    .right ul li{
+        margin-right: 20px;
+    }
+}

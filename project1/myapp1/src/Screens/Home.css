@@ -1,0 +1,65 @@
+.imageBox{
+    width: 100vw;
+    height: 60vh;
+}
+.imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.SearchBaar1{
+    /* background-color: aqua; */
+    margin: 50px;
+  height: 100px;
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 1px;
+  margin-left: 585px !important;
+  border: none;
+  margin-bottom: 21px;
+  /* display: flex; */
+}
+.typing_text{
+    width: 550px;
+    height: 284px;
+    position: relative;
+    z-index: 1;
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: -413px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 140px;
+}
+.inputType1 {
+    font-size: 16px !important;
+    width: 501px !important;
+    padding-left: 37px !important;
+    border-radius: 76px !important;
+    background: #fff !important;
+    margin: 30px 0 !important;
+    color: #0d0d0d !important;
+    border: none !important;
+    margin-right: 23px !important;
+}
+
+.searchbtn1{
+    /* background-color: blue; */
+    width: 108px;
+    height: 45px;
+    border-radius: 20px;
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    text-decoration: none;
+  background-color: #1565c0;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
+
+}
+.searchbtn1:hover{
+    background-color: rgb(80, 80, 189);
+    cursor: pointer;
+}

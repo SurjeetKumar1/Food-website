@@ -1,0 +1,23 @@
+.SingnUpform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.06rem;
+}
+ .btn {
+        width: 90px;
+        height: 45px;
+        font-size: 1.08rem;
+        text-align: center;
+        background-color: #007BFF;
+        border: none;
+        margin-top: 21px;
+        border-radius: 5px;
+     }
+ .btns:hover{
+    background-color: #052d59;
+ }
+ .email{
+    margin-bottom: 20px;
+ }
