@@ -18,10 +18,8 @@ app.post("/signup",async(req,res)=>{
   var salt = await bcrypt.genSalt(10);
   const hashedPass = await bcrypt.hash(password, salt);
   let foodMember = new FoodMember({name, email, password:hashedPass});
-  // let foodMember = new FoodMember({name, email, password});
   const doc= await foodMember.save();
-  // res.send(doc)
-  res.json(doc);
+  res.status(200).json({message:"SignUp",doc});
 }catch(e){
   res.send(e);
 }
@@ -35,7 +33,6 @@ app.post("/login", async (req, res) => {
       const isPasswordValid= await bcrypt.compare(password,foodMember.password)
       if(isPasswordValid){
         res.send({foodMember,message:"correct"})
-        console.log("valid")
       }
       else{
         res.send({err:"incorrect password",message:"wrong"})

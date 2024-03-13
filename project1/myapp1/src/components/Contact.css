@@ -1,0 +1,46 @@
+.contactbody{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.insidecontact{
+    /* margin-top: 6rem !important;  */
+    color: rgb(1, 11, 39);  
+    width: 100%;
+    margin-top: 7rem !important;
+}
+.contentBody {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.formdata{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    border: 1.5px solid rgba(0, 0, 0, 0.258);
+    padding: 2rem;
+    gap: 2rem;
+ 
+}
+.formdata input,textarea{
+    padding: 10px;
+    color: rgb(2, 2, 34);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    width: 95%;
+}
+.formcontainer{
+    margin: 5rem 0;
+}
+
+.formdata input:focus,
+.formdata textarea:focus {
+    border: 1.5px solid rgb(226, 114, 9); 
+}

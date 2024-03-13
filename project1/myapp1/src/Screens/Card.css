@@ -4,58 +4,19 @@
     column-gap: 50px;
     row-gap: 30px;
 }
-.imageCard::before{
-content: '';
-position: absolute;
-margin-top: -80px;
-width:138px;
-    height: 517px;
-    margin-left: 60px;
-    background: linear-gradient(#00ccff,#d400d4);
-    position: absolute;
-    z-index: -1;
-    animation: animate 4s linear infinite;
-    border-radius: 10px;
-}
-@keyframes animate {
-    0%{
-        transform: rotate((0deg));
-    }
-    100%{
-        transform: rotate(350deg);
-    }
-}
 .imageCard{
     position: relative;
     width:268px;
-    height: 317px;
-    background: rgb(0, 0, 0);
+    min-height: 317px;
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     margin: 15px;
     margin-left: 33px;
     overflow: hidden;
     border-radius: 10px;
     z-index: 1;
-    box-shadow: 2px 2px 4px 1px rgba(244, 241, 241, 0.33);
    
 }
-
-.imageCard::after{
-content:'';
-position: absolute;
-inset: 4px;
-background:#0e1538;
-z-index:-1;
-border-radius: 10px;
-}
-.imageCard{
-    position: relative;
-    z-index: 1;
-}
-/* .imageCard :hover{
-
-
-} */
 img{
     width: 96.5%;
   height: 186px;
@@ -64,8 +25,8 @@ img{
   border-radius: 4px;
 
 }
-img:hover{
-    transform: scaleZ(2);
+.imageCard img:hover{
+    transform: scale(1.1);
 }
 .cardTittle{
     margin: 5px 5px
@@ -128,7 +89,26 @@ img:hover{
 }
 .lineBorder {
     width: 100%;
-    height: 1px;
-    background-color: white;
-    margin: 0px 30px 5px 30px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.333);
+    margin-top: 1rem;
+    text-align: center;
 }
+.addCart button{
+    color: white !important;
+    padding: 8px 10px !important;
+  margin: 10px 10px 15px 10px !important;
+  background: #030920 !important;
+  outline: none !important;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* .addCart button:hover {
+    background-color: white; 
+  }
+  
+  .addCart button:hover svg {
+    color: blue; 
+  } */
+

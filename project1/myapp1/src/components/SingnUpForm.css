@@ -1,77 +1,85 @@
-/* .Form {
-    background-color: white;
-    color: black;
-    width: 492px;
-    height: 362px;
-    border-radius: 10px;
-    margin: auto;
-    box-sizing: border-box;
-  } 
- .box{
-    margin:20px ;
- } 
- .name input {
-    width: 272px;
-    height: 22px;
-    margin: 30px;
-    border-radius: 5px;
-    padding-left: 10px;
-  }
-  .Email{
-    width: 272px;
-    height: 22px;
-    margin: 30px;
-    border-radius: 5px;
-    border: none;
-    padding-left: 10px;
-  }
-     */
-
-
-
-     /* Login.css */
-
-     .Form {
+ .Form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
+        color :rgb(13, 1, 33);
       }
+    .Form form{
+        margin-top: 10rem !important;
+  /* background: red; */
+  padding: 4rem;
+  border: 1.5px solid rgba(0, 0, 0, 0.329);
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 150px rgba(0, 0, 0, 0.154);
+      }
+
+      .boxinfo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
       
-      .box, .sss, .Password {
+      .box,.same, .sss, .Password {
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
       }
       
       .same {
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 1.1rem;
         margin-bottom: 5px;
       }
       
-      input[type='text'],
-      input[type='email'],
-      input[type='password'] {
-        width: 100%;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
+      .same input[type='text'],
+      .sss input[type='email'],
+      .Password input[type='password'] {
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 1rem;
+          outline: none;
+
+      }
+      
+      .same input[type='text']:focus,
+      .sss input[type='email']:focus,
+      .Password input[type='password']:focus
+       {
+          border: 1.5px solid rgb(226, 114, 9); 
       }
       
       .submit-button {
-        background-color: #007BFF;
         color: #fff;
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         font-size: 18px;
+        font-weight: 500;
+        background: linear-gradient(orange,#d9620b);
       }
-      
-      .submit-button:hover {
-        background-color: #0056b3;
+   
+      .Google{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
       }
-      
-      /* Add more styling as needed */
+      .Google .googleBox{
+        border: 1.5px solid #0000005c;
+        font-size: 2rem;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .Google .googleBox :hover{
+        color: rgb(240, 108, 7);
+      }
+      div a:hover{
+        color: rgb(240, 108, 7) !important;
+      }
       

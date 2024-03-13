@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import "./Home.css"
 import Card from "./Card1";
 import { Typewriter } from 'react-simple-typewriter'
-// import ParticlesBackground from "./Particles/ParticlesBackground";
 
 const Home1 = () => {
 
@@ -46,10 +45,10 @@ const Home1 = () => {
         <div className="imageBox"> <img src="https://images.unsplash.com/photo-1613292443284-8d10ef9383fe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " /> </div>
         {/* </div>s */}
       </Carousel>
-      <div className="typing_text">
-        <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
-        <span style={{ fontWeight: 400 }}>Make your day good with a good, <br></br></span>{' '}
-          <span style={{ color: ' #f1c40f ', fontWeight: '1000',fontSize:'3.9rem' }}>
+      <div className="typing_text ">
+        <h1 style={{ paddingTop: '', margin: 'auto 0', fontWeight: 'normal', display:"flex", justifyContent:"center",alignItems:"center",flexDirection:"column" }}>
+        <span style={{ fontWeight: 500,fontSize:"2.5rem" ,color:"white" }}>Make your day good with a good....<br/></span>{' '}
+          <span style={{ color: '#0f031e', fontWeight: '700',fontSize:'2rem' }}>
             <Typewriter
               words={['PIZZA ', 'PANNER', 'PASTA', 'FRUIT CHAAT', 'DAAL', 'SOUP', 'CHICKEN', 'INDIAN FOOD ', 'BIRTHDAY CAKE', 'BURGER']}
               loop={true}
@@ -68,11 +67,11 @@ const Home1 = () => {
       <div className="SearchBaar1">
         <input type="text" className="inputType1" placeholder="Search Food Name" value={foodvalue} onChange={(e) => handleSaerch(e)} ></input>
         {/* <button className="searchbtn1"  >Search</button> */}
-        <Button className="searchbtn1" variant="contained"  onClick={handleSaerch}>Search</Button>
+        <Button
+        className="searchbtn1" variant="contained"   onClick={handleSaerch}>Search</Button>
       </div>
       
 
-  {/* <ParticlesBackground/> */}
 
       <Card />
   

@@ -1,6 +1,7 @@
 .imageBox{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
+    margin-top: 5rem;
 }
 .imageBox img{
     width: 100%;
@@ -10,43 +11,56 @@
 }
 
 .SearchBaar1{
-    /* background-color: aqua; */
-    margin: 50px;
-  height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
   font-size: 1.3rem;
   color: white;
-  margin-top: 1px;
-  margin-left: 585px !important;
+  margin-top: -3rem !important;
   border: none;
   margin-bottom: 21px;
-  /* display: flex; */
+  margin: auto;
+  margin-bottom: 2rem;
+  gap: 1rem;
 }
 .typing_text{
-    width: 550px;
-    height: 284px;
-    position: relative;
-    z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 100;
+  top: -14rem;
     font-size: 1.5rem;
     margin: auto;
-    margin-top: -413px;
-  position: relative;
-  z-index: 2;
-  margin-bottom: 140px;
 }
 .inputType1 {
     font-size: 16px !important;
-    width: 501px !important;
+    max-width: 550px !important;
     padding-left: 37px !important;
     border-radius: 76px !important;
     background: #fff !important;
-    margin: 30px 0 !important;
     color: #0d0d0d !important;
     border: none !important;
-    margin-right: 23px !important;
+  border: 2px solid rgba(0, 0, 0, 0.389) !important;
+  outline: none !important;
+  max-height: 3rem !important;
+
+}
+.SearchBaar1 input:focus {
+  border: 2px solid rgb(247, 120, 0) !important;
+
 }
 
+.SearchBaar1 Button{
+  background: linear-gradient(orange,#d9620b);
+}
+/* Button:hover{
+  background: linear-gradient(rgb(229, 158, 26),#c56a29);
+} */
 .searchbtn1{
-    /* background-color: blue; */
     width: 108px;
     height: 45px;
     border-radius: 20px;
