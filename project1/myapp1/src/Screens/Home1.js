@@ -13,31 +13,38 @@ const Home1 = () => {
   const handleSaerch = (e) => {
     setfoodvalue(e.target.value);
   }
-
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 1,
+      autoPlay: true, // Enable auto-slide
+      autoPlaySpeed: 2000, // Specify auto-slide speed (in milliseconds)
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 1,
+      autoPlay: true, // Enable auto-slide
+      autoPlaySpeed: 2000, // Specify auto-slide speed (in milliseconds)
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 1,
+      autoPlay: true, // Enable auto-slide
+      autoPlaySpeed: 2000, // Specify auto-slide speed (in milliseconds)
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      autoPlay: true, // Enable auto-slide
+      autoPlaySpeed: 2000, // Specify auto-slide speed (in milliseconds)
     },
   };
-
+  
   return (
     <>
       
-      <Carousel responsive={responsive}>
+      <Carousel responsive={responsive} autoPlay={true} autoPlaySpeed={2000} infinite={true}>
         {/* <div className="imageBox"> */}
         <div className="imageBox"> <img src="https://images.unsplash.com/photo-1610614819513-58e34989848b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " /> </div>
         <div className="imageBox"> <img src="https://images.unsplash.com/photo-1544378730-8b5104b18790?q=80&w=2049&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D " /> </div>
@@ -70,8 +77,6 @@ const Home1 = () => {
         <Button
         className="searchbtn1" variant="contained"   onClick={handleSaerch}>Search</Button>
       </div>
-      
-
 
       <Card />
   

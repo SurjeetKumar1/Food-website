@@ -8,6 +8,7 @@ import "./SingnUpForm.css"
   import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 export default function LoginForm() {
   const navigate = useNavigate();
   const [email,setEmail]=useState("")

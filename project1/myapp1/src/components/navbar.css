@@ -32,7 +32,7 @@ align-items: center;
     text-transform: capitalize;
     margin-right: 5rem;
 }
-.right ul{
+.right .navUl{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,29 +48,47 @@ align-items: center;
    color: rgb(3, 3, 39);
    font-size: 1.2rem;
 }
-.right ul li a:hover{
+.right .navUl li a:hover{
    color: #050223;
 }
-   
-/* }
-@media (max-width:992px) {
-    .left{
-        margin-left: 123px;
-        width: 231px;
-      }
-
-    .right{
-        margin-right: 133px;
-    }
-        .singnupbtn{
-            width: 89px;
-        }
-
-    .right ul li{
-        margin-right: 20px;
-    }
-} */
+   .mobile{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+    display: none;
+   }
 
 li Button{
     background: linear-gradient(orange,#d9620b); 
 }
+
+@media screen and (max-width:768px) {
+    .mobile {
+      display: block;
+    }
+    .right .navUl {
+      display: none; /* Initially hide the navUl */
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      background-color: #d9620b;
+      position: fixed;
+      top: 5rem;
+      right: 0px;
+      width: 100%;
+      backdrop-filter: blur(50px);
+      
+      padding: 1rem;
+      background: transparent;
+      gap: 1rem;
+    }
+    .left img {
+      width: 8rem !important;
+      height: 3rem !important;
+      margin-left: -2rem;
+    }
+    .navUl.active {
+      display: flex; /* Display the navUl when active */
+    }
+  }

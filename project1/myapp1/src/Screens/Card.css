@@ -10,7 +10,7 @@
     min-height: 317px;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    margin: 15px;
+    margin-bottom: 15px;
     margin-left: 33px;
     overflow: hidden;
     border-radius: 10px;
@@ -104,11 +104,39 @@ img{
   border-radius: 4px;
   cursor: pointer;
 }
-/* .addCart button:hover {
-    background-color: white; 
-  }
-  
-  .addCart button:hover svg {
-    color: blue; 
-  } */
 
+@media screen and (max-width:500px) {
+    .imageCard {
+        width: 270px;
+        min-height: 290px;
+        margin-left: 0px;
+      } 
+      .foodItemName {
+        margin: 0px 0px 0px 10px;
+        font-size: 1.1rem;
+      }
+      .totalPlate {
+        margin: 0px 0px 0px 0px;
+        width: 41px;
+
+      }
+      .addCart button {
+        color: white !important;
+        padding: 5px 8px !important;
+      }
+      img {
+        height: 136px;
+      }
+      .foodName {
+        margin-left: 30px;
+        font-size: 1.8rem;
+      }
+      .mainCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      width: 100vw;
+        gap: 7px;
+    }
+}

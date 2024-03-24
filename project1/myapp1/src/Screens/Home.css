@@ -1,7 +1,8 @@
 .imageBox{
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     margin-top: 5rem;
+    margin-left: -5px;
 }
 .imageBox img{
     width: 100%;
@@ -57,9 +58,6 @@
 .SearchBaar1 Button{
   background: linear-gradient(orange,#d9620b);
 }
-/* Button:hover{
-  background: linear-gradient(rgb(229, 158, 26),#c56a29);
-} */
 .searchbtn1{
     width: 108px;
     height: 45px;
@@ -76,4 +74,28 @@
 .searchbtn1:hover{
     background-color: rgb(80, 80, 189);
     cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+  .typing_text {
+    margin: 0 2rem;
+  }
+  .typing_text h1 > span {
+    font-size: 1.5rem !important;
+  }
+  .imageBox {
+    height: 50vh;
+  }
+  .SearchBaar1{
+    margin-right: 10px;
+  }
+  .inputType1 {
+    max-width: 210px !important;
+    max-height: 2.3rem !important;
+    border: 1px solid rgba(0, 0, 0, 0.389) !important;
+  }
+  .searchbtn1{
+    width: 80px;
+    height: 40px;
+  }
 }

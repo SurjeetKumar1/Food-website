@@ -82,4 +82,12 @@
       div a:hover{
         color: rgb(240, 108, 7) !important;
       }
+
+@media screen and (max-width:768px){
+  .Form form {
+    padding: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+}
       
